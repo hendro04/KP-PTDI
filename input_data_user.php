@@ -40,6 +40,10 @@
                     <td><textarea name="keterangan" id="" cols="30" rows="10"></textarea></td>
                 </tr>
                 <tr>
+                    <td>Teknisi</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
                     <td><input type="submit">Input</td>
                 </tr>
             </table>
