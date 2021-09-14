@@ -7,11 +7,11 @@
     <form action="">
         <table border="0" cellpadding="0">
             <tr>
-                <td><label for="">Username : </label></td>
+                <td><label for="">Username</label></td>
                 <td><input type="text"></td>
             </tr>
             <tr>
-                <td><label for="">Password :</label></td>
+                <td><label for="">Password</label></td>
                 <td><input type="password"></td>
             </tr>
             <tr>
