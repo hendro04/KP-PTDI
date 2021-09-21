@@ -5,6 +5,6 @@ $nama = $_POST['nama_admin'];
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-mysql_query($koneksi,"insert db_servis_center('','$nama','$username','$password')");
+mysqli_query($koneksi,"insert into tb_admin values('','$nama','$username','$password')");
 
 ?>
