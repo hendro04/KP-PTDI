@@ -6,4 +6,5 @@ $username = $_POST['username'];
 $password = $_POST['password'];
 
 mysqli_query($koneksi,"insert into tb_admin values('','$nama','$username','$password')");
+
 ?>
