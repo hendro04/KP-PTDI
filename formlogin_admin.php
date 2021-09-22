@@ -1,11 +1,10 @@
 <html>
     <head>
         <title>Login</title>
-        <link rel=”stylesheet” type=”text/css” href=”login.css”
     </head>
 <body>
     <h3>Login Admin</h1>
-    <form class="login">
+    <form method="post" action="validasi_login.php">
         <table border="0" cellpadding="0">
             <tr>
                 <!--<td><label for="">Username</label></td>-->
@@ -16,7 +15,7 @@
                 <td><input type="password" placeholder="Password"></td>
             </tr>
             <tr>
-                <td><input type="submit" name="login" value="login"></td>
+                <td><input type="submit" name="login" value="Log In"></td>
             </tr>
         </table>
     </form>
