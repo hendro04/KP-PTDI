@@ -9,7 +9,7 @@
         <tr>
             <th>No</th>
             <th>Token</th>
-            <th>Customer</th>
+            <th>User</th>
             <th>NIK</th>
             <th>No Aset</th>
             <th>Kategori</th>
@@ -64,7 +64,7 @@
         ?>
         </td>
         <td><a href="cetak.php?t=<?php echo $d['no_token'] ?>" target="_blank">Print</a>
-        <a href="edit.php"?t=<?php echo $d['no_token'] ?>>Edit</a>
+        <a href="edit.php?t=<?php echo $d['no_token'] ?>">Edit</a>
         </td>
     </tr>
     <?php
