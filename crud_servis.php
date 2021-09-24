@@ -14,6 +14,7 @@ $adm = $_SESSION['id_admin'];
 $teknisi = $_POST['teknisi'];
 $tgl = $_POST['tanggal'];
 $ket = $_POST['keterangan'];
+$sts = 1;
 
-mysqli_query($koneksi,"insert into tb_servis values('$token','$customer','$nik','$aset','$kategori','$merek','$seri','$adm','$teknisi','$tgl','$ket')");
+mysqli_query($koneksi,"insert into tb_servis values('$token','$customer','$nik','$aset','$kategori','$merek','$seri','$adm','$teknisi','$tgl','$ket','$sts')");
 ?>
