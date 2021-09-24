@@ -2,6 +2,7 @@
 include 'koneksi_db.php';
 
 session_start(); 
+
 $token = uniqid();
 $customer = $_POST['nama_user'];
 $nik = $_POST['nik_user'];
