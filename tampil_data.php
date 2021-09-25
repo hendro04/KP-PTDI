@@ -526,17 +526,17 @@
         <?php
             if($d['status'] == 1){
                 echo 'Dalam Antrian';
-                ?> <br> <a href="update_status.php?s=2&t=<?php echo $d['no_token'] ?>">Proses</a> <?php
+                ?> <br> <a class="btn btn-flat btn-sm btn-primary" href="update_status.php?s=2&t=<?php echo $d['no_token'] ?>">Proses</a> <?php
             } else if($d['status'] == 2){
                 echo 'Dalam Pengerjaan';
-                ?> <br> <a href="update_status.php?s=3&t=<?php echo $d['no_token'] ?>">Selesai</a> <?php
+                ?> <br> <a class="btn btn-flat btn-sm btn-primary" href="update_status.php?s=3&t=<?php echo $d['no_token'] ?>">Selesai</a> <?php
             } else if($d['status'] == 3){
                 echo 'Selesai';
             }
         ?>
         </td>
-        <td><a href="cetak.php?t=<?php echo $d['no_token'] ?>" target="_blank">Print</a>
-        <a href="edit.php?t=<?php echo $d['no_token'] ?>">Edit</a>
+        <td><a class="btn btn-flat btn-sm bg-blue" href="cetak.php?t=<?php echo $d['no_token'] ?>" target="_blank">Print</a>
+        <a class="btn btn-flat btn-sm btn-primary" href="edit.php?t=<?php echo $d['no_token'] ?>">Edit</a>
         </td>
         </tr>
         <?php
