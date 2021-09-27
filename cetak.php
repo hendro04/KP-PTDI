@@ -6,7 +6,7 @@
     <?php
         include 'koneksi_db.php';
     ?>
-
+<center>
     <table border="1">
         <tr>
             <th>Tanggal</th>
@@ -33,6 +33,7 @@
             }
         ?>
     </table>
+    </center>
 </body>
 <script>
 		window.print();

@@ -467,13 +467,14 @@
               <!-- general form elements -->
               <div class="box box-primary">
                 <div class="box-header with-border">
-                  <h3 class="box-title">Input Data Service</h3>
+                  <h3 class="box-title">Edit Data Service</h3>
                 </div><!-- /.box-header -->
                 <!-- form start -->
             <?php
-                include 'koneksi_db.php';
+            include 'koneksi_db.php';
 
             $no_token = $_GET['t'];
+           // var_dump($no_token);
 
             $sql = mysqli_query($koneksi,"SELECT * FROM `tb_servis` as a 
             LEFT JOIN tb_teknisi as b ON a.teknisi = b.id_teknisi
@@ -490,7 +491,7 @@
                     </div>
                     <div class="form-group">
                       <label for="exampleInputNIK">NIK</label>
-                      <input type="text" name="nik_user" class="form-control" id="exampleInputPassword1" placeholder="180096" value="<?php echo $d['no_nik']?>">
+                      <input type="text" name="nik_user" class="form-control" id="exampleInputPassword1" placeholder="180096" value="<?php echo $d['nik_user']?>">
                     </div>
                     <div class="form-group">
                       <label for="exampleInputNoAset">No Aset</label>
@@ -511,41 +512,43 @@
                     
                     <div class="form-group">
                       <label for="exampleInputMerek">Merek</label>
-                      <input type="text" name="merek" class="form-control" id="exampleInputPassword1" placeholder="Example : Asus">
+                      <input type="text" name="merek" class="form-control" id="exampleInputPassword1" placeholder="Example : Asus" value="<?php echo $d['merek']?>">
                     </div>
                     <div class="form-group">
                       <label for="exampleInputSeri">Seri</label>
-                      <input type="text" name="seri" class="form-control" id="exampleInputPassword1" placeholder="Example : ROG">
+                      <input type="text" name="seri" class="form-control" id="exampleInputPassword1" placeholder="Example : ROG" value="<?php echo $d['seri']?>">
                     </div>
                     <div class="form-group">
                       <label for="exampleInputTeknisi">Teknisi</label>
                       <select name="teknisi" id="teknisi" class="form-control" >
-                        <option disabled selected> Pilih Teknisi </option><br>
-                        <?php 
-                        include 'koneksi_db.php';
-    
-                        $sql=mysqli_query($koneksi, "SELECT * FROM tb_teknisi");
-                        while($d = mysqli_fetch_array($sql)){
-                        ?>
-                        <option value="<?=$d['id_teknisi']?>"><?=$d['nama_teknisi']?></option> 
-                        <?php
-                        }
-                        ?>
+                            <option disabled selected> Pilih Teknisi </option>
+                            <?php 
+                            include 'koneksi_db.php';
+
+                            $sql=mysqli_query($koneksi, "SELECT * FROM tb_teknisi");
+                            while($dt = mysqli_fetch_array($sql)){
+                            ?>
+                            <option value="<?=$dt['id_teknisi']?>" <?php if($d['teknisi'] == $dt['id_teknisi']){
+                                    echo "selected";
+                                }?>><?=$dt['nama_teknisi']?></option> 
+                            <?php
+                            }
+                            ?>
                      </select>
                     </div>
                     <div class="form-group">
                       <label for="exampleInputPassword1">Tanggal</label>
-                      <input type="date" name="tanggal" class="form-control" id="">
+                      <input type="date" name="tanggal" class="form-control" id="" value="<?php echo $d['tanggal']?>">
                     </div>
                     <div class="form-group">
                       <label for="exampleInputKeterangan">Keterangan</label>
                   
-                      <textarea name="keterangan" id="" cols="30" rows="10" class="form-control"></textarea>
+                      <textarea name="keterangan" id="" cols="30" rows="10" class="form-control" value="<?php echo $d['keterangan']?>"></textarea>
                     </div>
                   </div><!-- /.box-body -->
 
                   <div class="box-footer">
-                    <button type="submit" class="btn btn-primary">Input</button>
+                    <button type="submit" class="btn btn-primary" value="Save">Save</button>
                   </div>
                 </form>
               </div><!-- /.box -->

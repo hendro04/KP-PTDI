@@ -5,10 +5,9 @@
 <body>
 <form method="post" action="">
     <center><h1>Cek Resi</h1>
-
-    <input type="text" name="cek" placeholder="Cek resi anda di sini......"><button type="submit" name="cari">Cari</button><br><br>
+    <input type="text" name="cek" placeholder="Cek resi anda di sini......" ><button type="submit" name="cari">Cari</button><br><br>
 </form> 
-<table border = "2">
+<table border = "0">
     <tr>
         <th>Tanggal</th>
         <th>No Token</th>
