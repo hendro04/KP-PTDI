@@ -1,5 +1,6 @@
 <html>
 <head>
+<link rel="icon" href="img/logo_di.png" type="image/gif" sizes="16x16">
     <title>Cetak Resi</title>
 </head>
 <body>

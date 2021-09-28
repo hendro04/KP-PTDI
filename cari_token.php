@@ -1,5 +1,6 @@
 <html>
     <head>
+        <link rel="icon" href="img/logo_di4.png">
         <title>Cek Resi</title>
     </head>
 <body>

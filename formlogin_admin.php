@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="icon" href="img/logo_di4.png" type="image/gif" sizes="16x16">
 		<title>Login Admin</title>
 		<!-- Tell the browser to be responsive to screen width -->
 		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -27,7 +28,7 @@
 	<body class="hold-transition login-page">
 		<div class="login-box">
 			<div class="login-logo">
-			<center><img src="img/logo_di.png" alt="" width="250px"></center>
+			<center><a href="https://www.indonesian-aerospace.com/"><img src="img/logo_di.png" alt="" width="250px"></a></center>
 				<a href="#"><b>Service </b> Center</a>
 			</div><!-- /.login-logo -->
 			<div class="login-box-body">
