@@ -28,7 +28,7 @@
 	<body class="hold-transition login-page">
 		<div class="login-box">
 			<div class="login-logo">
-			<center><a href="https://www.indonesian-aerospace.com/"><img src="img/logo_di.png" alt="" width="250px"></a></center>
+			<center><a href="https://www.indonesian-aerospace.com/" target="_blank"><img src="img/logo_di.png" alt="" width="250px"></a></center>
 				<a href="#"><b>Service </b> Center</a>
 			</div><!-- /.login-logo -->
 			<div class="login-box-body">
